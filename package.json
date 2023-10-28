@@ -1,0 +1,7 @@
+{
+  "name": "hillel_couse_project",
+  "version": "1.0.0",
+  "devDependencies": {
+    "cypress": "*"
+  }
+}
