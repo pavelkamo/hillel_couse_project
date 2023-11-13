@@ -1,3 +1,4 @@
+#TODO make a structure of ignores
 to_ignore/testIgnore.js
 /node_modules/
 misc.xml
