@@ -9,7 +9,7 @@ function stringToArray(inputString) {
     // Split the string into an array of words
     let wordsArray = inputString.trim().split(' ');
     // Sort the array of words
-    wordsArray.sort();
+    wordsArray.sort((a, b) => a.localeCompare(b));
     // Print the sorted array
     return wordsArray;
 }
@@ -23,18 +23,9 @@ console.log(stringToArray(str));    // виводить [ 'для', 'довіл�
 const initialArray = [1, 4, 6, 6, 7, 5, 34, 5, 66, 1000, 1];
 //Version 2.1
 function removeDuplicatesAndSort(arr) {
+    arr.sort((a, b) => a - b);
     return [... new Set(arr)];
 }
-//Version 2.2
-// function removeDuplicatesAndSort(arr) {
-//     let unicArray = [];
-//     for (let i = 0; i < arr.length; i++) {
-//         if (unicArray.indexOf(arr[i]) === -1) {
-//             unicArray.push(arr[i]);
-//         }
-//     }
-//     return unicArray;
-// }
 
 console.log(removeDuplicatesAndSort(initialArray)); // виводить [ 1, 4, 5, 6, 7, 34, 66, 1000 ]
 /*
