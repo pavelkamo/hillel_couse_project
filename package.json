@@ -4,5 +4,8 @@
   "devDependencies": {
     "cypress": "*"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
 }
